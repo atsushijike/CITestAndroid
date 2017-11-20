@@ -20,7 +20,7 @@ android {
         config {
             keyAlias 'citestandroid'
             keyPassword 'w5YTWZDVx8z0'
-            storeFile file(citestandroid.keystore)
+            storeFile file('citestandroid.keystore')
             storePassword 'w5YTWZDVx8z0'
         }
     }
