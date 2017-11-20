@@ -1,4 +1,4 @@
-package com.example.a_jike.citestandroid;
+package com.a_jike.citestandroid;
 
 import org.junit.Test;
 

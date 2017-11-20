@@ -16,10 +16,18 @@ repositories {
 
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'citestandroid'
+            keyPassword 'w5YTWZDVx8z0'
+            storeFile file('/Users/a_jike/Code/CITestAndroid/citestandroid.keystore')
+            storePassword 'w5YTWZDVx8z0'
+        }
+    }
     compileSdkVersion 25
     buildToolsVersion '26.0.0'
     defaultConfig {
-        applicationId "com.example.a_jike.citestandroid"
+        applicationId "com.a_jike.citestandroid"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
@@ -30,6 +38,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
         }
     }
     productFlavors {
